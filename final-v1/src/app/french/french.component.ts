@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FrenchComponent implements OnInit {
 
+  word: string = "";
+  trans: string = "";
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  initApplication() {
+    this.word = "Hello";
+    this.trans = "Bonjour";
   }
 
 }
